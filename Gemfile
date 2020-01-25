@@ -10,8 +10,8 @@ gem 'rails', '~> 6.0.2', '>= 6.0.2.1'
 # update from sqlite3 to postgresql
 gem 'pg', '1.2.2'
 # helper gems to reference and use
-# better error logging
-gem 'better_errors', '~> 2.4'
+# # better error logging add to dev only
+# gem 'better_errors', '~> 2.4'
 # rails css framework with bulma
 gem 'bulma-rails', '~> 0.6.1'
 # simple rails forms
@@ -55,7 +55,9 @@ group :development do
   gem 'spring-watcher-listen', '~> 2.0.0'
   # guard - dev only jus there for reference
   gem 'guard', '~> 2.14', '>= 2.14.1'
-  gem 'guard-livereload', '~> 2.5', '>= 2.5.2'
+  gem 'guard-livereload', '~> 2.5', '>= 2.5.2', require: false
+  # better error logging add to dev only
+  gem 'better_errors', '~> 2.5', '>= 2.5.1'
 end
 
 group :test do
