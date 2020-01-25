@@ -6,7 +6,20 @@ ruby '2.5.1'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 6.0.2', '>= 6.0.2.1'
 # Use sqlite3 as the database for Active Record
-gem 'sqlite3', '~> 1.4'
+# gem 'sqlite3', '~> 1.4'
+# update from sqlite3 to postgresql
+gem 'pg', '1.2.2'
+# helper gems to reference and use
+# better error logging
+gem 'better_errors', '~> 2.4'
+# rails css framework with bulma
+gem 'bulma-rails', '~> 0.6.1'
+# simple rails forms
+gem 'simple_form'
+# guard - dev only jus there for reference
+# gem 'guard', '~> 2.14', '>= 2.14.1'
+# gem 'guard-livereload', '~> 2.5', '>= 2.5.2'
+
 # Use Puma as the app server
 gem 'puma', '~> 4.1'
 # Use SCSS for stylesheets
@@ -40,6 +53,9 @@ group :development do
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring'
   gem 'spring-watcher-listen', '~> 2.0.0'
+  # guard - dev only jus there for reference
+  gem 'guard', '~> 2.14', '>= 2.14.1'
+  gem 'guard-livereload', '~> 2.5', '>= 2.5.2'
 end
 
 group :test do
