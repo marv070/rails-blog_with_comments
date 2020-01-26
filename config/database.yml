@@ -17,7 +17,7 @@
 development:
   adapter: postgresql
   encoding: unicode
-  database: marvs_blog_development
+  database: marvs_new_rails_blog_development
   pool: 5
   username: marvin
   password:
@@ -26,7 +26,7 @@ development:
 development:
   adapter: postgresql
   encoding: unicode
-  database: marvs_blog_production
+  database: marvs_new_rails_blog_production
   pool: 5
   username: marvin
   password:
@@ -56,7 +56,7 @@ development:
 test:
   adapter: postgresql
   encoding: unicode
-  database: marvs_blog_test
+  database: marvs_new_rails_blog_test
   pool: 5
   username: marvin
   password:
